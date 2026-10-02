@@ -286,7 +286,7 @@ body {
 .gallery-item {
   border-radius: 12px;
   overflow: hidden;
-  height: 400px;
+  height: 220px;
 }
 
 .gallery-item img {
