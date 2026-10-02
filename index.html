@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kareem & Laila Wedding Invitation">
+  <title>Kareem & Laila | The Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome For Icons & WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-container">
+
+    <!-- HERO SECTION -->
+    <header class="wedding-hero">
+      <div class="hero-content">
+        <p class="wedding-subtitle">WE ARE GETTING MARRIED</p>
+        <h1 class="wedding-names">Kareem <span class="ampersand">&amp;</span> Laila</h1>
+        <p class="wedding-quote">"Two lives, two hearts, joined together in friendship, united forever in love."</p>
+        <div class="hero-date">
+          <span>OCTOBER 10, 2026</span>
+          <small>AT 8:00 PM</small>
+        </div>
+        <div class="hero-buttons">
+          <a href="#rsvp" class="btn btn-pink">RSVP ATTENDANCE</a>
+          <a href="#details" class="btn btn-outline">WEDDING DETAILS</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown-section">
+      <div class="countdown-title">COUNTING DOWN TO THE BIG DAY</div>
+      <div id="countdown" class="timer-display">
+        <div class="time-block">
+          <span id="days">00</span>
+          <label>Days</label>
+        </div>
+        <div class="time-block">
+          <span id="hours">00</span>
+          <label>Hours</label>
+        </div>
+        <div class="time-block">
+          <span id="minutes">00</span>
+          <label>Minutes</label>
+        </div>
+        <div class="time-block">
+          <span id="seconds">00</span>
+          <label>Seconds</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT DETAILS & GALLERY -->
+    <section id="details" class="wedding-details-section">
+      <div class="section-header">
+        <span class="subtext">THE CELEBRATION</span>
+        <h2>Wedding Details</h2>
+      </div>
+
+      <div class="details-grid">
+        <!-- Date & Time Card -->
+        <div class="info-card">
+          <div class="card-icon"><i class="fa-regular fa-calendar-check"></i></div>
+          <h3>When</h3>
+          <p class="primary-info">Saturday, Oct 10, 2026</p>
+          <p class="secondary-info">Ceremony begins promptly at 8:00 PM</p>
+        </div>
+
+        <!-- Location Card -->
+        <div class="info-card highlight-card">
+          <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Where</h3>
+          <p class="primary-info">Grand Ballroom</p>
+          <p class="secondary-info">Main Wedding Hall & Venue</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-btn">
+            Open Map Location →
+          </a>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery-card span-2">
+          <h3>Our Moments</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item"><img src="cartoon1.png" alt="Kareem & Laila Artwork 1"></div>
+            <div class="gallery-item"><img src="cartoon2.png" alt="Kareem & Laila Artwork 2"></div>
+            <div class="gallery-item"><img src="cartoon3.png" alt="Kareem & Laila Artwork 3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUAL FORMS (RSVP & WISHES) -->
+    <section id="rsvp" class="forms-section">
+      <div class="forms-container">
+        
+        <!-- RSVP FORM -->
+        <div class="form-box">
+          <div class="form-title">
+            <h3>RSVP</h3>
+            <p>Please confirm your presence by filling out the form</p>
+          </div>
+          <form id="rsvpForm">
+            <div class="form-group">
+              <label for="guestName">Your Name</label>
+              <input id="guestName" type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="attendance">Will you attend?</label>
+              <select id="attendance" required>
+                <option value="">Select your status...</option>
+                <option value="yes">Joyfully Accept 💕</option>
+                <option value="no">Regretfully Decline</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Companions</label>
+              <input id="guests" type="number" min="1" max="5" value="1">
+            </div>
+            <button type="submit" class="btn btn-pink full-width">Send Confirmation</button>
+            <p id="rsvpMessage" class="form-status"></p>
+          </form>
+        </div>
+
+        <!-- WISHES FORM -->
+        <div class="form-box">
+          <div class="form-title">
+            <h3>Blessing & Wishes</h3>
+            <p>Send your love and warm wishes to Kareem & Laila</p>
+          </div>
+          <form id="wishForm">
+            <div class="form-group">
+              <label for="wishName">Your Name</label>
+              <input id="wishName" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="wishMessage">Your Blessing</label>
+              <textarea id="wishMessage" rows="5" placeholder="Write your heartfelt message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline full-width">Send Wishes</button>
+            <p id="wishStatusMessage" class="form-status"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="wedding-footer">
+      <p class="footer-names">Kareem &amp; Laila</p>
+      <p class="footer-date">10 . 10 . 2026</p>
+    </footer>
+
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/201500816542?text=مرحباً،%20أود%20الاستفسار%20عن%20تصميم%20دعوة%20زفاف%20مشابهة" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Order Wedding Invitation">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
