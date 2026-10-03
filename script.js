@@ -1,11 +1,11 @@
 // ===============================
 // CONFIGURATION & EVENT DETAILS
 // ===============================
-const EVENT_TIME = "20:00";
+const EVENT_TIME = "19:00";
 const GOOGLE_SCRIPT_URL = "PUT_YOUR_GOOGLE_SCRIPT_URL_HERE";
 
 // Wedding Date: October 10, 2026 at 8:00 PM
-const weddingDate = new Date(`2026-10-10T${EVENT_TIME}:00`);
+const weddingDate = new Date(`2026-11-06T${EVENT_TIME}:00`);
 
 // ===============================
 // COUNTDOWN TIMER
