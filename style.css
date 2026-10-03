@@ -277,31 +277,32 @@ body {
   margin-bottom: 25px;
 }
 
+/* GALLERY MODIFIED */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  align-items: start; /* يمنع تمدد العناصر بالقوة */
 }
 
 .gallery-item {
   border-radius: 12px;
   overflow: hidden;
-  height: 220px;
-  background-color: var(--pink-soft); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto; /* يلغي الارتفاع الثابت 220px ليسمح للصور بالظهور كاملة */
+  background: var(--pink-soft);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: contain; 
+  height: auto; /* يحافظ على نسبة أبعاد الصورة الأصلية بدون أي قطع */
+  display: block;
+  object-fit: contain;
   transition: transform 0.4s ease;
 }
 
 .gallery-item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /* FORMS SECTION */
